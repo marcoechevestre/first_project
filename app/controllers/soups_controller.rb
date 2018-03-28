@@ -1,5 +1,6 @@
 class SoupsController < ApplicationController
-  before_action :fetch_soup, only: [:show, :update, :edit:, :destroy]
+  before_action :fetch_soup, only: [:show, :update, :edit, :destroy, :toggle_featured]
+
   def index
     @soups = Soup.all
 
@@ -33,7 +34,8 @@ class SoupsController < ApplicationController
   end
 
   def toggle_featured
-
+    @soup.toggle!(:featured)
+    redirect_to @soup
   end
 
 

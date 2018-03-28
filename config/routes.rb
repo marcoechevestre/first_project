@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   #Another similar way but it changes the url
   #Is get "/allcategories", to: redirect("/")
 
-  get "/soups/:id/toggle_featured", to: "soups#touble_featured"
+  get "/soups/:id/toggle_featured", to: "soups#toggle_featured", as: :toggle_featured
 end
