@@ -9,7 +9,7 @@ class SoupsController < ApplicationController
   end
 
   def show
-    
+
     respond_to do |format|
       format.html
       format.json { render json: @soup}
@@ -31,6 +31,11 @@ class SoupsController < ApplicationController
   #do
   def destroy
   end
+
+  def toggle_featured
+
+  end
+
 
   private
 
