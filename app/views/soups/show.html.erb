@@ -6,6 +6,6 @@
   <p>This soup is not in season, so it kind sucks right now.</p>
 <% end %>
 
-<% if params[:admin] = "true"%>
+<% if params[:admin] == "true"%>
 <p><%= link_to "Toggle featured", toggle_featured_path(@soup) %></p>
 <% end %>
