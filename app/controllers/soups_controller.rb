@@ -35,6 +35,7 @@ class SoupsController < ApplicationController
 
   def toggle_featured
     @soup.toggle!(:featured)
+    flash[:notice] = "Successfully changed the featured flag."
     redirect_to @soup
   end
 
