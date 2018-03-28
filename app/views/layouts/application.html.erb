@@ -10,7 +10,7 @@
 
   <body>
     <% if flash[:notice]%>
-      <p><%= flash[:notice].full_messages %></p>
+      <p><%= flash[:notice] %></p>
     <% end %>
     <%= yield %>
   </body>
