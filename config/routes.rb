@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   #Is get "/allcategories", to: redirect("/")
 
   get "/soups/:id/toggle_featured", to: "soups#toggle_featured", as: :toggle_featured
+  get "/secret_soups", to: "soups#secret_soups"
 end

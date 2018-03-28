@@ -39,6 +39,11 @@ class SoupsController < ApplicationController
     redirect_to @soup
   end
 
+  def secret_soups
+    session[:vip] = true
+    redirect_to root_path
+  end
+
 
   private
 
